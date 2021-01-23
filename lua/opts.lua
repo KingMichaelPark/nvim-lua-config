@@ -32,3 +32,5 @@ vim.wo.relativenumber = true          -- Relative line numbers
 vim.wo.signcolumn = 'yes'             -- Show sign column
 vim.wo.wrap = false                   -- Disable line wrap
 vim.g.noswapfile = true               -- Life life on the edge babyyyy
+vim.g.shortmess = "c"
+vim.g.completeopt = "menuone,noinsert,noselect,fuzzy"

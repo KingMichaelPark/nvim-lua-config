@@ -16,3 +16,12 @@ vim.api.nvim_set_keymap('n', '<leader>gb', "<cmd>GBlame<cr>", opts)
 vim.api.nvim_set_keymap('n', '<leader>ga', "<cmd>Git add .<cr>", opts)
 vim.api.nvim_set_keymap('n', '<leader>gc', "<cmd>Git commit<cr>", opts)
 vim.api.nvim_set_keymap('n', '<leader>gs', "<cmd>Git status<cr>", opts)
+
+-- Commenter
+vim.g.NERDCreateDefaultMappings = 1
+
+-- Completion
+-- Use <Tab> and <S-Tab> to navigate through popup menu
+-- vim.api.nvim_set_keymap('i', '<expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"', opts)
+-- vim.api.nvim_set_keymap('i', '<expr> <S-Tab>   pumvisible() ? "\<C-p>" : "\<Tab>"', opts)
+
