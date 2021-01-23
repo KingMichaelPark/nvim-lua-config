@@ -22,6 +22,6 @@ vim.g.NERDCreateDefaultMappings = 1
 
 -- Completion
 -- Use <Tab> and <S-Tab> to navigate through popup menu
--- vim.api.nvim_set_keymap('i', '<expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"', opts)
--- vim.api.nvim_set_keymap('i', '<expr> <S-Tab>   pumvisible() ? "\<C-p>" : "\<Tab>"', opts)
-
+vim.api.nvim_set_keymap('i', '<Tab>', 'pumvisible() ? "\\<C-n>" : "\\<Tab>"', {expr = true})
+vim.api.nvim_set_keymap('i', '<S-Tab>', 'pumvisible() ? "\\<C-p>" : "\\<Tab>"', {expr = true})
+ 
