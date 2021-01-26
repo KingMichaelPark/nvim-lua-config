@@ -53,5 +53,6 @@ end
 local servers = {"pyright"}
 
 for _, lsp in ipairs(servers) do
-  nvim_lsp[lsp].setup { on_attach = on_attach }
+  nvim_lsp[lsp].setup { on_attach = on_attach, init_options = {provideFormatter = true}
+  }
 end

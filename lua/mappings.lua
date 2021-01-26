@@ -1,5 +1,9 @@
 local opts = { noremap = true, silent = true} 
 
+-- Python
+vim.api.nvim_set_keymap('n', '<leader>fi', "<cmd>! black %<cr>", opts)
+
+
 -- FZF
 vim.api.nvim_set_keymap('n', '<leader>ff', "<cmd>Files<cr>", opts)
 vim.api.nvim_set_keymap('n', '<leader>fg', "<cmd>GFiles<cr>", opts)
