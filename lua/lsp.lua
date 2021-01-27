@@ -50,9 +50,18 @@ end
 
 -- Use a loop to conveniently both setup defined servers 
 -- and map buffer local keybindings when the language server attaches
-local servers = {"pyright"}
+local servers = {"pyright", "jsonls"}
 
 for _, lsp in ipairs(servers) do
-  nvim_lsp[lsp].setup { on_attach = on_attach, init_options = {provideFormatter = true}
-  }
+   if lsp == "jsonls" then
+  	nvim_lsp[lsp].setup { on_attach = on_attach,    commands = {
+      Format = {
+        function()
+          vim.lsp.buf.range_formatting({},{0,0},{vim.fn.line("$"),0})
+        end
+      }
+    }, init_options = {provideFormatter = true}}
+  else
+  	nvim_lsp[lsp].setup { on_attach = on_attach, init_options = {provideFormatter = true}}
+  end
 end

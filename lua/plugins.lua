@@ -4,9 +4,9 @@ return require('packer').startup(function()
     use {'junegunn/fzf'}
     use {'junegunn/fzf.vim'}
     use {'joshdick/onedark.vim'}
+    use {'ayu-theme/ayu-vim'}
     use {'tpope/vim-fugitive'}
     use {'preservim/nerdcommenter'}
-    use {'tpope/vim-surround'}
     use {'mhinz/vim-signify'}
     use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'} 
     use {'neovim/nvim-lspconfig'}

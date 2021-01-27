@@ -20,6 +20,12 @@ lua << END
   end
 
 _G.packer_plugins = {
+  ["ayu-vim"] = {
+    loaded = true,
+    only_sequence = true,
+    only_setup = false,
+    path = "/home/mike/.local/share/nvim/site/pack/packer/start/ayu-vim"
+  },
   ["completion-nvim"] = {
     loaded = true,
     only_sequence = true,
@@ -85,12 +91,6 @@ _G.packer_plugins = {
     only_sequence = true,
     only_setup = false,
     path = "/home/mike/.local/share/nvim/site/pack/packer/start/vim-signify"
-  },
-  ["vim-surround"] = {
-    loaded = true,
-    only_sequence = true,
-    only_setup = false,
-    path = "/home/mike/.local/share/nvim/site/pack/packer/start/vim-surround"
   }
 }
 
