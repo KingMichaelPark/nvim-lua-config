@@ -42,10 +42,8 @@ local on_attach = function(client, bufnr)
 	autocmd CursorMoved <buffer> lua vim.lsp.buf.clear_references()
       augroup END
     ]], false)
-
-  require('completion').on_attach(client)
-
   end
+  require('completion').on_attach(client)
 end
 
 -- Use a loop to conveniently both setup defined servers 
@@ -62,6 +60,6 @@ for _, lsp in ipairs(servers) do
       }
     }, init_options = {provideFormatter = true}}
   else
-  	nvim_lsp[lsp].setup { on_attach = on_attach, init_options = {provideFormatter = true}}
+  	nvim_lsp[lsp].setup { on_attach = on_attach}
   end
 end

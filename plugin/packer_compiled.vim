@@ -20,12 +20,6 @@ lua << END
   end
 
 _G.packer_plugins = {
-  ["ayu-vim"] = {
-    loaded = true,
-    only_sequence = true,
-    only_setup = false,
-    path = "/home/mike/.local/share/nvim/site/pack/packer/start/ayu-vim"
-  },
   ["completion-nvim"] = {
     loaded = true,
     only_sequence = true,
@@ -44,6 +38,12 @@ _G.packer_plugins = {
     only_setup = false,
     path = "/home/mike/.local/share/nvim/site/pack/packer/start/fzf.vim"
   },
+  gruvbox = {
+    loaded = true,
+    only_sequence = true,
+    only_setup = false,
+    path = "/home/mike/.local/share/nvim/site/pack/packer/start/gruvbox"
+  },
   nerdcommenter = {
     loaded = true,
     only_sequence = true,
@@ -61,12 +61,6 @@ _G.packer_plugins = {
     only_sequence = true,
     only_setup = false,
     path = "/home/mike/.local/share/nvim/site/pack/packer/start/nvim-treesitter"
-  },
-  ["onedark.vim"] = {
-    loaded = true,
-    only_sequence = true,
-    only_setup = false,
-    path = "/home/mike/.local/share/nvim/site/pack/packer/start/onedark.vim"
   },
   ["vim-airline"] = {
     loaded = true,
