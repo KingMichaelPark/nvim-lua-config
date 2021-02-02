@@ -38,11 +38,11 @@ _G.packer_plugins = {
     only_setup = false,
     path = "/home/mike/.local/share/nvim/site/pack/packer/start/fzf.vim"
   },
-  gruvbox = {
+  ["gruvbox-material"] = {
     loaded = true,
     only_sequence = true,
     only_setup = false,
-    path = "/home/mike/.local/share/nvim/site/pack/packer/start/gruvbox"
+    path = "/home/mike/.local/share/nvim/site/pack/packer/start/gruvbox-material"
   },
   nerdcommenter = {
     loaded = true,
