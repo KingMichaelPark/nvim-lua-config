@@ -38,12 +38,6 @@ _G.packer_plugins = {
     only_setup = false,
     path = "/home/mike/.local/share/nvim/site/pack/packer/start/fzf.vim"
   },
-  ["gruvbox-material"] = {
-    loaded = true,
-    only_sequence = true,
-    only_setup = false,
-    path = "/home/mike/.local/share/nvim/site/pack/packer/start/gruvbox-material"
-  },
   nerdcommenter = {
     loaded = true,
     only_sequence = true,
@@ -61,6 +55,12 @@ _G.packer_plugins = {
     only_sequence = true,
     only_setup = false,
     path = "/home/mike/.local/share/nvim/site/pack/packer/start/nvim-treesitter"
+  },
+  vim = {
+    loaded = true,
+    only_sequence = true,
+    only_setup = false,
+    path = "/home/mike/.local/share/nvim/site/pack/packer/start/vim"
   },
   ["vim-airline"] = {
     loaded = true,

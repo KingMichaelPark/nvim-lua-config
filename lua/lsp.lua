@@ -59,6 +59,13 @@ for _, lsp in ipairs(servers) do
         end
       }
     }, init_options = {provideFormatter = true}}
+  elseif lsp == "pyright" then
+        nvim_lsp[lsp].setup { on_attach = on_attach, settings = {
+		python = {
+			venvPath = "~/.pyenv/versions"
+		}
+	}
+	}
   else
   	nvim_lsp[lsp].setup { on_attach = on_attach}
   end
