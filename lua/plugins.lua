@@ -7,6 +7,7 @@ return require('packer').startup(function()
     use {'tpope/vim-fugitive'}
     use {'preservim/nerdcommenter'}
     use {'mhinz/vim-signify'}
+    use {'ambv/black'}
     use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'} 
     use {'neovim/nvim-lspconfig'}
     use {'nvim-lua/completion-nvim'}

@@ -1,5 +1,9 @@
 local opts = { noremap = true, silent = true} 
 
+-- Python
+vim.api.nvim_set_keymap('n', '<leader>p', "<cmd>Black<cr>", opts)
+
+
 
 -- FZF
 vim.api.nvim_set_keymap('n', '<leader>ff', "<cmd>Files<cr>", opts)
@@ -11,12 +15,14 @@ vim.api.nvim_set_keymap('n', '<leader>/', "<cmd>BLines<cr>", opts)
 vim.api.nvim_set_keymap('n', '<leader>f/', "<cmd>Lines<cr>", opts)
 
 -- Git
+vim.api.nvim_set_keymap('n', '<leader>g', "<cmd>G<cr>", opts)
 vim.api.nvim_set_keymap('n', '<leader>gr', "<cmd>Ggrep<cr>", opts)
-vim.api.nvim_set_keymap('n', '<leader>gg', "<cmd>GDiff<cr>", opts)
 vim.api.nvim_set_keymap('n', '<leader>gb', "<cmd>GBlame<cr>", opts)
-vim.api.nvim_set_keymap('n', '<leader>ga', "<cmd>Git add .<cr>", opts)
 vim.api.nvim_set_keymap('n', '<leader>gc', "<cmd>Git commit<cr>", opts)
-vim.api.nvim_set_keymap('n', '<leader>gs', "<cmd>Git status<cr>", opts)
+vim.api.nvim_set_keymap('n', '<leader>gp', "<cmd>Git push<cr>", opts)
+vim.api.nvim_set_keymap('n', '<leader>gs', "<cmd>Gdiffsplit!<cr>", opts) -- Open split window to resolve conflicts
+vim.api.nvim_set_keymap('n', '<leader>gh', "<cmd>diffget //2<cr>", opts) -- Take the left window changes
+vim.api.nvim_set_keymap('n', '<leader>gl', "<cmd>diffget //3<cr>", opts) -- Take the right window changes
 
 -- Commenter
 vim.g.NERDCreateDefaultMappings = 1

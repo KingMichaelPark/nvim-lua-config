@@ -38,3 +38,4 @@ vim.g.completion_matching_strategy_list = {'exact', 'substring', 'fuzzy'}
 vim.o.shortmess = vim.o.shortmess .. "c"
 vim.g.termguicolors = true
 vim.o.clipboard = 'unnamedplus'
+vim.g.diffopt = "vertical" -- split windows vertically
