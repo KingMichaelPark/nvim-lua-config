@@ -39,3 +39,5 @@ vim.o.shortmess = vim.o.shortmess .. "c"
 vim.g.termguicolors = true
 vim.o.clipboard = 'unnamedplus'
 vim.g.diffopt = "vertical" -- split windows vertically
+
+vim.g.black_linelength = 120
