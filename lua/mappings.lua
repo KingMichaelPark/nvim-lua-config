@@ -20,7 +20,7 @@ vim.api.nvim_set_keymap('n', '<leader>gr', "<cmd>Ggrep<cr>", opts)
 vim.api.nvim_set_keymap('n', '<leader>gb', "<cmd>Gblame<cr>", opts)
 vim.api.nvim_set_keymap('n', '<leader>gc', "<cmd>Git commit<cr>", opts)
 vim.api.nvim_set_keymap('n', '<leader>gp', "<cmd>Git push<cr>", opts)
-vim.api.nvim_set_keymap('n', '<leader>gs', "<cmd>Gdiffsplit!<cr>", opts) -- Open split window to resolve conflicts
+vim.api.nvim_set_keymap('n', '<leader>gs', "<cmd>Gvdiffsplit!<cr>", opts) -- Open split window to resolve conflicts
 vim.api.nvim_set_keymap('n', '<leader>gh', "<cmd>diffget //2<cr>", opts) -- Take the left window changes
 vim.api.nvim_set_keymap('n', '<leader>gl', "<cmd>diffget //3<cr>", opts) -- Take the right window changes
 

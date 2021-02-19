@@ -35,9 +35,9 @@ vim.g.noswapfile = true               -- Life life on the edge babyyyy
 vim.g.shortmess = "c"
 vim.o.completeopt = "menuone,noinsert,noselect"
 vim.g.completion_matching_strategy_list = {'exact', 'substring', 'fuzzy'}
-vim.o.shortmess = vim.o.shortmess .. "c"
+vim.o.shortmess = vim.o.shortmess .. 'c'
 vim.g.termguicolors = true
 vim.o.clipboard = 'unnamedplus'
-vim.g.diffopt = "vertical" -- split windows vertically
 
 vim.g.black_linelength = 120
+--vim.g.fzf_preview_window
