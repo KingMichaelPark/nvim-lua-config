@@ -44,14 +44,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/mike/.local/share/nvim/site/pack/packer/start/dracula"
   },
-  fzf = {
-    loaded = true,
-    path = "/home/mike/.local/share/nvim/site/pack/packer/start/fzf"
-  },
-  ["fzf.vim"] = {
-    loaded = true,
-    path = "/home/mike/.local/share/nvim/site/pack/packer/start/fzf.vim"
-  },
   nerdcommenter = {
     loaded = true,
     path = "/home/mike/.local/share/nvim/site/pack/packer/start/nerdcommenter"
@@ -63,6 +55,18 @@ _G.packer_plugins = {
   ["nvim-treesitter"] = {
     loaded = true,
     path = "/home/mike/.local/share/nvim/site/pack/packer/start/nvim-treesitter"
+  },
+  ["plenary.nvim"] = {
+    loaded = true,
+    path = "/home/mike/.local/share/nvim/site/pack/packer/start/plenary.nvim"
+  },
+  ["popup.nvim"] = {
+    loaded = true,
+    path = "/home/mike/.local/share/nvim/site/pack/packer/start/popup.nvim"
+  },
+  ["telescope.nvim"] = {
+    loaded = true,
+    path = "/home/mike/.local/share/nvim/site/pack/packer/start/telescope.nvim"
   },
   ["vim-airline"] = {
     loaded = true,
