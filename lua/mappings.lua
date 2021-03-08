@@ -6,13 +6,23 @@ vim.api.nvim_set_keymap('n', '<leader>p', "<cmd>Black<cr>", opts)
 
 
 -- FZF
-vim.api.nvim_set_keymap('n', '<leader>ff', "<cmd>Telescope find_files<cr>", opts)
-vim.api.nvim_set_keymap('n', '<leader>fg', "<cmd>Telescope git_files<cr>", opts)
-vim.api.nvim_set_keymap('n', '<leader>fs', "<cmd>Telescope grep_string<cr>", opts)
-vim.api.nvim_set_keymap('n', '<leader>fb', "<cmd>Telescope buffers<cr>", opts)
-vim.api.nvim_set_keymap('n', '<leader>fr', "<cmd>Telescope live_grep<cr>", opts)
-vim.api.nvim_set_keymap('n', '<leader>/', "<cmd>Telescope current_buffer_fuzzy_find<cr>", opts)
-vim.api.nvim_set_keymap('n', '<leader>fm', "<cmd>Telescope git_status<cr>", opts)
+vim.api.nvim_set_keymap('n', '<leader>ff', "<cmd>Files<cr>", opts)
+vim.api.nvim_set_keymap('n', '<leader>fg', "<cmd>GFiles<cr>", opts)
+vim.api.nvim_set_keymap('n', '<leader>fb', "<cmd>Buffers<cr>", opts)
+vim.api.nvim_set_keymap('n', '<leader>fr', "<cmd>Rg<cr>", opts)
+vim.api.nvim_set_keymap('n', '<leader>/', "<cmd>BLines<cr>", opts)
+vim.api.nvim_set_keymap('n', '<leader>fm', "<cmd>GFiles?<cr>", opts)
+
+
+
+-- Telescope
+--vim.api.nvim_set_keymap('n', '<leader>ff', "<cmd>Telescope find_files<cr>", opts)
+--vim.api.nvim_set_keymap('n', '<leader>fg', "<cmd>Telescope git_files<cr>", opts)
+--vim.api.nvim_set_keymap('n', '<leader>fs', "<cmd>Telescope grep_string<cr>", opts)
+--vim.api.nvim_set_keymap('n', '<leader>fb', "<cmd>Telescope buffers<cr>", opts)
+--vim.api.nvim_set_keymap('n', '<leader>fr', "<cmd>Telescope live_grep<cr>", opts)
+--vim.api.nvim_set_keymap('n', '<leader>/', "<cmd>Telescope current_buffer_fuzzy_find<cr>", opts)
+--vim.api.nvim_set_keymap('n', '<leader>fm', "<cmd>Telescope git_status<cr>", opts)
 --vim.api.nvim_set_keymap('n', '<leader>f/', "<cmd>Lines<cr>", opts)
 
 -- Git
