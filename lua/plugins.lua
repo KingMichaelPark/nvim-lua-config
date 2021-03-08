@@ -7,7 +7,7 @@ return require('packer').startup(function()
 	--'nvim-telescope/telescope.nvim',
 	--requires = {{'nvim-lua/popup.nvim'}, {'nvim-lua/plenary.nvim'}}
     --}
-    use {'dracula/vim', as = 'dracula'}
+    use {'joshdick/onedark.vim'}
     use {'tpope/vim-fugitive'}
     use {'preservim/nerdcommenter'}
     use {'mhinz/vim-signify'}

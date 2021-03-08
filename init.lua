@@ -2,9 +2,9 @@ require('plugins')
 require('opts')
 require('mappings')
 
-vim.cmd('colo dracula') 
+vim.cmd('colo onedark') 
 
-vim.g.airline_theme = 'dracula'
+vim.g.airline_theme = 'onedark'
 vim.api.nvim_command('autocmd ColorScheme * highlight Normal ctermbg=NONE guibg=NONE')
 vim.api.nvim_command('autocmd ColorScheme * highlight EndOfBuffer ctermbg=NONE guibg=NONE')
 

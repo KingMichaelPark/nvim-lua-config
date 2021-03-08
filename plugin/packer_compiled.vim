@@ -40,10 +40,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/mike/.local/share/nvim/site/pack/packer/start/completion-nvim"
   },
-  dracula = {
-    loaded = true,
-    path = "/home/mike/.local/share/nvim/site/pack/packer/start/dracula"
-  },
   fzf = {
     loaded = true,
     path = "/home/mike/.local/share/nvim/site/pack/packer/start/fzf"
@@ -63,6 +59,10 @@ _G.packer_plugins = {
   ["nvim-treesitter"] = {
     loaded = true,
     path = "/home/mike/.local/share/nvim/site/pack/packer/start/nvim-treesitter"
+  },
+  ["onedark.vim"] = {
+    loaded = true,
+    path = "/home/mike/.local/share/nvim/site/pack/packer/start/onedark.vim"
   },
   ["vim-airline"] = {
     loaded = true,
