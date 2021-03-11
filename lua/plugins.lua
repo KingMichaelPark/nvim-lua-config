@@ -3,11 +3,13 @@ vim.cmd [[packadd packer.nvim]]
 return require('packer').startup(function()
     use {'junegunn/fzf'}
     use {'junegunn/fzf.vim'}
+    --use {'ayu-theme/ayu-vim'}
     --use {
 	--'nvim-telescope/telescope.nvim',
 	--requires = {{'nvim-lua/popup.nvim'}, {'nvim-lua/plenary.nvim'}}
     --}
-    use {'joshdick/onedark.vim'}
+    --use {'joshdick/onedark.vim'}
+    use {'gruvbox-community/gruvbox'}
     use {'tpope/vim-fugitive'}
     use {'preservim/nerdcommenter'}
     use {'mhinz/vim-signify'}
