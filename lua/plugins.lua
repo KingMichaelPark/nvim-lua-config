@@ -8,8 +8,8 @@ return require('packer').startup(function()
 	--'nvim-telescope/telescope.nvim',
 	--requires = {{'nvim-lua/popup.nvim'}, {'nvim-lua/plenary.nvim'}}
     --}
-    --use {'joshdick/onedark.vim'}
-    use {'gruvbox-community/gruvbox'}
+    use {'dracula/vim'}
+    --use {'gruvbox-community/gruvbox'}
     use {'tpope/vim-fugitive'}
     use {'preservim/nerdcommenter'}
     use {'mhinz/vim-signify'}
